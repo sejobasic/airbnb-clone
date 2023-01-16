@@ -5,7 +5,7 @@ import Navbar from './components/Navbar'
 import experiencesData from './utils/data'
 
 function App() {
-  const cardData = experiencesData.map((item) => {
+  const cards = experiencesData.map((item) => {
     return (
       <Card
         key={item.id}
@@ -24,7 +24,7 @@ function App() {
     <div className='main-container'>
       <Navbar />
       <Hero />
-      {cardData}
+      <section className='cards-list'>{cards}</section>
     </div>
   )
 }

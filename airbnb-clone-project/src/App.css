@@ -49,15 +49,34 @@ nav {
   font-weight: 300;
 }
 
+.cards-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
 .card-container {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
   width: 11em;
   font-size: 1em;
   font-weight: 300;
 }
 
-.activity-img {
+.card-img {
   width: 100%;
+  height: 250px;
+  object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 0.3em;
+}
+
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .rating-img {
@@ -67,10 +86,15 @@ nav {
 .card-content {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .grey {
   color: #918E9B;
+}
+
+.card-price {
+  margin-top: auto;
 }
 
 .bold {
