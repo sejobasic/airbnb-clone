@@ -4,7 +4,7 @@ import ratingIcon from '../assets/star.png'
 function Card({ item }) {
   return (
     <div className='card-container'>
-     {item.openSpots < 1 && <div className='card-badge'>SOLD OUT</div>}
+      {item.openSpots < 1 && <div className='card-badge'>SOLD OUT</div>}
       <div className='card-wrapper'>
         <img
           className='card-img'
