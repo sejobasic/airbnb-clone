@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -25,4 +25,54 @@ nav {
 .nav-menu {
   margin-left: auto;
   width: 2em;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 2em;
+  margin-top: 2em;
+}
+
+.hero-container img {
+  max-width: 80%;
+}
+
+.hero-container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.hero-container h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.card-container {
+  width: 11em;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.activity-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.rating-img {
+  width: 1em;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+}
+
+.grey {
+  color: #918E9B;
+}
+
+.bold {
+  font-weight: 500;
 }
