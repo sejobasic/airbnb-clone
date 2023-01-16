@@ -1,34 +1,25 @@
 import React from 'react'
 import ratingIcon from '../assets/star.png'
 
-function Card({
-  title,
-  desc,
-  price,
-  coverImg,
-  location,
-  openSpots,
-  rating,
-  reviewCount,
-}) {
+function Card({ item }) {
   return (
     <div className='card-container'>
-     {openSpots < 1 && <div className='card-badge'>SOLD OUT</div>}
+     {item.openSpots < 1 && <div className='card-badge'>SOLD OUT</div>}
       <div className='card-wrapper'>
         <img
           className='card-img'
-          src={coverImg}
+          src={item.coverImg}
           alt='image of scuba diving'
         />
         <div className='card-content'>
           <img className='rating-img' src={ratingIcon} alt='star rating' />
-          <span>&nbsp;{rating}</span>
-          <span className='grey'>({reviewCount})&nbsp;</span>
-          <span className='grey'>- {location}</span>
+          <span>&nbsp;{item.stats.rating}</span>
+          <span className='grey'>({item.stats.reviewCount})&nbsp;</span>
+          <span className='grey'>- {item.location}</span>
         </div>
-        <p className='card-title'>{title}</p>
+        <p className='card-title'>{item.title}</p>
         <p className='card-price'>
-          <span className='bold'>From ${price} </span> per person
+          <span className='bold'>From ${item.price} </span> per person
         </p>
       </div>
     </div>
